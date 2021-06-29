@@ -25,4 +25,6 @@
     <!-- Default for DTMF tones -->
     <bool name="def_dtmf_tones_enabled">false</bool>
 
+    <bool name="def_accelerometer_rotation">true</bool>
+
 </resources>
