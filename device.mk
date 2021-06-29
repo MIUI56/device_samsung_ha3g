@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/n1awifi
+LOCAL_PATH := device/samsung/n1a3g
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -38,4 +38,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, device/samsung/n1a-common/device-common.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/n1awifi/n1awifi-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/n1a3g/n1a3g-vendor.mk)

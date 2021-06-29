@@ -1,6 +1,6 @@
 Copyright 2020 - The LineageOS Project
 
-Device configuration for Samsung Galaxy Note 10.1 (SM-P600).
+Device configuration for Samsung Galaxy Note 10.1 (SM-P601).
 ========================================
 
 Basic   | Specification List

@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/n1awifi
+LOCAL_PATH := device/samsung/n1a3g
 
-ifneq ($(filter n1awifi,$(TARGET_DEVICE)),)
+ifneq ($(filter n1a3g,$(TARGET_DEVICE)),)
 
   subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))

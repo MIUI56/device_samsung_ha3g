@@ -18,23 +18,23 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from n1awifi device
-$(call inherit-product, device/samsung/n1awifi/device.mk)
+# Inherit from n1a3g device
+$(call inherit-product, device/samsung/n1a3g/device.mk)
 
 # Inherit some common lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := n1awifi
-PRODUCT_NAME := lineage_n1awifi
+PRODUCT_DEVICE := n1a3g
+PRODUCT_NAME := lineage_n1a3g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-P600
+PRODUCT_MODEL := SM-P601
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=n1awifi \
-    PRIVATE_BUILD_DESC="lt03wifiue 5.1.1 LMY47X P600XXUDQA1 release-keys"
+    PRODUCT_NAME=n1a3g \
+    PRIVATE_BUILD_DESC="lt033gxx-user 5.1.1 LMY47X P601XXUDQA1 release-keys"
 
-BUILD_FINGERPRINT := samsung/lt03wifiue/lt03wifiue:5.1.1/LMY47X/P600XXUDQA1:user/release-keys
+BUILD_FINGERPRINT := "samsung/lt033gxx/lt033g:5.1.1/LMY47X/P601XXUDQA1:user/release-keys"

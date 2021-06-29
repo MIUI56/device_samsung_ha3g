@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/n1awifi
+LOCAL_PATH := device/samsung/n1a3g
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_n1awifi.mk
+    $(LOCAL_DIR)/lineage_n1a3g.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_n1awifi-user \
-    lineage_n1awifi-userdebug \
-    lineage_n1awifi-eng
+    lineage_n1a3g-user \
+    lineage_n1a3g-userdebug \
+    lineage_n1a3g-eng

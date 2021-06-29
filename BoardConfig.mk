@@ -17,13 +17,13 @@
 # Inherit from n1a-common
 include device/samsung/n1a-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/n1awifi
+LOCAL_PATH := device/samsung/n1a3g
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lt033g,lt03wifi,lt03wifiue,n1awifi
+TARGET_OTA_ASSERT_DEVICE := lt03wifi,lt03wifiue,n1a3g
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_n1awifi_defconfig
+TARGET_KERNEL_CONFIG := lineageos_n1a3g_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
@@ -38,4 +38,4 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Inherit from the proprietary version
--include vendor/samsung/n1awifi/BoardConfigVendor.mk
+-include vendor/samsung/n1a3g/BoardConfigVendor.mk
