@@ -22,4 +22,7 @@
 
     <bool name="def_install_non_market_apps">true</bool>
 
+    <!-- Default for DTMF tones -->
+    <bool name="def_dtmf_tones_enabled">false</bool>
+
 </resources>
