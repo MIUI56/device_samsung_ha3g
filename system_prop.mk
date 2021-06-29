@@ -14,7 +14,27 @@
 # limitations under the License.
 #
 
-# Radio
+# Modem
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
-    ro.radio.noril=1
+    ro.com.android.dataroaming=false \
+    rild.libpath=/vendor/lib/libsec-ril.so \
+    rild.libargs=-d /dev/ttyS0 \
+    ro.ril.telephony.mqanelements=6 \
+    ro.telephony.ril_class=SamsungExynosRIL
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.apm_sim_not_pwdn=1 \
+    persist.radio.add_power_save=1 \
+    telephony.lteOnCdmaDevice=0 \
+    ro.telephony.default_network=0 \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.hsxpa=1 \
+    ro.ril.gprsclass=10
+
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.disable=1 \
+    ro.config.vc_call_vol_steps=20 \
+    audio_hal.disable_two_mic=true

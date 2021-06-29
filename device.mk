@@ -18,14 +18,32 @@ LOCAL_PATH := device/samsung/n1a3g
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gps.xml
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.baseband.rc \
     init.target.rc
 
+# Radio
+PRODUCT_PACKAGES += \
+    modemloader \
+    libprotobuf-cpp-full \
+    libxml2 \
+    rild \
+    libril \
+    libreference-ril \
+    android.hardware.radio@1.0 \
+    android.hardware.radio.deprecated@1.0
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.legacy.rc
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
