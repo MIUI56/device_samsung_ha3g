@@ -28,8 +28,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.baseband.rc \
-    init.target.rc
+    init.baseband.rc
 
 # Audio
 PRODUCT_COPY_FILES += \
