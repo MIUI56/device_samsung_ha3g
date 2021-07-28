@@ -1,5 +1,5 @@
-on init
-    mkdir /efs 0771 radio system
+on early-init
+    mkdir /efs 0771 system radio
     symlink /dev/block/mmcblk0p13 /dev/mbin0
     restorecon /dev/mbin0
     symlink /sys/devices/platform/s5p-ehci/ehci_power /dev/ehci_power
@@ -10,7 +10,7 @@ on init
     write /proc/sys/net/core/netdev_max_backlog 2048
 
 on fs
-    chown radio system /efs
+    chown system radio /efs
     chmod 0771 /efs
 
     chown radio radio /sys/devices/virtual/misc/multipdp/waketime
