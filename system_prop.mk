@@ -35,6 +35,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.disable=1 \
-    ro.config.vc_call_vol_steps=20 \
-    audio_hal.disable_two_mic=true
+    ro.config.vc_call_vol_steps=20
+
