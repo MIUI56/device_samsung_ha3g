@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/n1a3g
+LOCAL_PATH := device/samsung/ha3g
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -51,8 +51,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
-# Inherit from n1a-common
-$(call inherit-product, device/samsung/n1a-common/device-common.mk)
+# Inherit from ha3g-common
+$(call inherit-product, device/samsung/ha3g-common/device-common.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/n1a3g/n1a3g-vendor.mk)
+$(call inherit-product, vendor/samsung/ha3g/ha3g-vendor.mk)

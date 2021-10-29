@@ -17,24 +17,25 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from n1a3g device
-$(call inherit-product, device/samsung/n1a3g/device.mk)
+# Inherit from ha3g device
+$(call inherit-product, device/samsung/ha3g/device.mk)
 
-# Inherit some common lineage stuff
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := n1a3g
-PRODUCT_NAME := lineage_n1a3g
+PRODUCT_DEVICE := ha3g
+PRODUCT_NAME := lineage_ha3g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-P601
+PRODUCT_MODEL := SM-N900
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=n1a3g \
-    PRIVATE_BUILD_DESC="lt033gxx-user 5.1.1 LMY47X P601XXUDQA1 release-keys"
+    PRODUCT_NAME=ha3gxx \
+    PRIVATE_BUILD_DESC="ha3gxx-user 5.0 LRX21V N900XXUEBPB1 release-keys"
 
-BUILD_FINGERPRINT := "samsung/lt033gxx/lt033g:5.1.1/LMY47X/P601XXUDQA1:user/release-keys"
+BUILD_FINGERPRINT := samsung/ha3gxx/ha3g:5.0/LRX21V/N900XXUEBPB1:user/release-keys

@@ -1,4 +1,4 @@
-# All unpinned blobs are from P600XXUDQA1
+
 # Vendor security patch level 2017-02-01
 
 # DRM
@@ -89,6 +89,7 @@ vendor/etc/nxp/mVoIPFMC/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt
 bin/cbd:vendor/bin/cbd
 etc/plmn_se13.bin:vendor/etc/plmn_se13.bin
 lib/libsec-ril.so:vendor/lib/libsec-ril.so
+lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
 
 # Sensors
 lib/hw/sensors.universal5420.so:vendor/lib/sensors.universal5420.so
