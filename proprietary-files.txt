@@ -1,5 +1,5 @@
 
-# Vendor security patch level 2017-02-01
+# Vendor security patch level 2020-11-01
 
 # DRM
 lib/liboemcrypto.so:vendor/lib/liboemcrypto.so

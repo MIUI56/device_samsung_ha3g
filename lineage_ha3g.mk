@@ -23,15 +23,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/samsung/ha3g/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
-
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ha3g
-PRODUCT_NAME := dot_ha3g
+PRODUCT_NAME := lineage_ha3g
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N900
 PRODUCT_MANUFACTURER := samsung
@@ -43,6 +39,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ha3gxx-user 5.0 LRX21V N900XXUEBPB1 release-keys"
 
 BUILD_FINGERPRINT := samsung/ha3gxx/ha3g:5.0/LRX21V/N900XXUEBPB1:user/release-keys
-
-# Set BootAnimation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080

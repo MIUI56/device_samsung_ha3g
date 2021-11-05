@@ -16,8 +16,13 @@
 
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_ha3g.mk
+    $(LOCAL_DIR)/dot_ha3g.mk \
+    $(LOCAL_DIR)/lineage_ha3g.mk 
+    
 
 COMMON_LUNCH_CHOICES := \
  dot_ha3g-userdebug \
-  dot_ha3g-eng
+  dot_ha3g-eng \
+  lineage_ha3g-userdebug \
+  lineage_ha3g-eng 
+  
